@@ -1,3 +1,6 @@
+#ifndef FLOOR_H
+#define FLOOR_H
+
 /*#include <fstream>
 #include <iostream>
 
@@ -24,12 +27,12 @@ public:
 
 #include <fstream>
 #include <iostream>
-
+#include <vector>
  class Floor
 {
   
     //Vector of Enemies on board
-    //Enemy* enemy_lst;
+    vector<Enemy*> enemy_lst;
     //Vector of Items on board
     //Item* item_lst;
     //Pointer to Player 
@@ -50,3 +53,5 @@ public:
 Floor (const int height, const int width, std::ifstream & file);
 
 };
+
+#endif
